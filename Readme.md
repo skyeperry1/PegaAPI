@@ -18,10 +18,15 @@ Show screenshot of upload area in Amazon dev portal
 
 - Set your enviroment variables 
 **CASE_PROP_PYLABEL** - This will set the pyLabel property of your case
+
 **CASE_PROP_PYNOTE** - This will set the pyNote property of your case
+
 **OPERATOR_ID** - The operator ID to authenticate the API call
+
 **OPERATOR_PWD** - The operators password
+
 **PEGA_API_ENDPOINT** - Enter the case class that you copied earlier
+
 **SYS_URL** - The url of your Pega instance
 
 If you'd like, you can encrypt your enviroment variables by following the documentation
