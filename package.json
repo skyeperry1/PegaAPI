@@ -1,0 +1,16 @@
+{
+  "name": "iot_button",
+  "version": "1.0.0",
+  "description": "IOT button test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.7.13",
+    "request": "^2.79.0",
+    "request-json": "^0.6.1"
+  }
+}
