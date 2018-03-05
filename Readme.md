@@ -17,6 +17,7 @@ Screenshot1 Here
 Show screenshot of upload area in Amazon dev portal
 
 - Set your enviroment variables 
+
 **CASE_PROP_PYLABEL** - This will set the pyLabel property of your case
 
 **CASE_PROP_PYNOTE** - This will set the pyNote property of your case
