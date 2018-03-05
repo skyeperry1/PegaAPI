@@ -11,7 +11,7 @@ A simple Lambda function that calls the Pega Create Case API. For more informati
 - Once you've created your case, you'll want to copy down the class name. This is found by navigating to the **Application Menu > Definition** from here, navigate to the **cases and data** tab and copy the class from the implementation class.
 Screenshot1 Here
 
-- Once you've created your case in Pega, we'll want to set up our Lambda function in Amazon. Make sure to create a new function from scratch and select Node 6.1 as your runtime enviroment. For additional information on setting up your Lambda function, see [here] (https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html "here").
+- Once you've created your case in Pega, we'll want to set up our Lambda function in Amazon. Make sure to create a new function from scratch and select Node 6.1 as your runtime enviroment. For additional information on setting up your Lambda function, see [here](https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html "here").
 
 - Once you've created you function, upload the archive.zip found in this repository. 
 Show screenshot of upload area in Amazon dev portal
