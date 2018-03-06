@@ -5,7 +5,7 @@ request = require('request-json');
 exports.handler = (event, context, callback) => {
 
     //Initialize Client
-    var client = request.createClient('https://lab0244.lab.pega.com');
+    var client = request.createClient(SYS_URL);
 
 
     //Case class and properties(Content)
@@ -13,7 +13,7 @@ exports.handler = (event, context, callback) => {
               "caseTypeID" : process.env.PEGA_API_ENDPOINT,
               "processID" : "pyStartCase",
               "content" : { "pyNote": process.env.CASE_PROP_PYNOTE ? process.env.CASE_PROP_PYNOTE : "Service Case",
-                            "pyLabel" : process.env.CASE_PROP_PYLABEL ? process.env.CASE_PROP_PYLABEL : "pyLabel" }
+                            "pyLabel": process.env.CASE_PROP_PYLABEL ? process.env.CASE_PROP_PYLABEL : "pyLabel" }
                };
 
     //Set up basic Pega API auth
@@ -25,4 +25,4 @@ exports.handler = (event, context, callback) => {
           console.log(res);
           context.done();            
       });
-};
+};x
