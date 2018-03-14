@@ -1,5 +1,5 @@
 var AWS = require("aws-sdk");
-request = require('request-json');
+var request = require("request-json");
 
 exports.handler = (event, context, callback) => {
 

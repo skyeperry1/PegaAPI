@@ -30,11 +30,11 @@ Click the **"Create Function"** button.
 For additional information on setting up your Lambda function, see [here](https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html "here").
 
 ### Upload your function
-Once you've created you function, upload the archive.zip found in this repository to your Lambda function, to do this
+Once you've created your function, upload the archive.zip found in this repository to your Lambda function. To do this:
 
--Under Code entry type, select "Upload a .Zip File"
+- Under Code entry type, select "Upload a .Zip File"
 
--Under Function package, click the upload button and select the .zip file included in this repository
+- Under Function package, click the upload button and select the .zip file included in this repository
 ![ScreenShot](screenshots/upload-deployment-package.png)
 
 ### Set the enviroment variables for your function:
