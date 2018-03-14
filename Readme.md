@@ -13,6 +13,7 @@ A simple Lambda function that calls the Pega Create Case API. For more informati
 Screenshot1 Here
 
 **Configure Lambda function**
+
 Once you've created your case in Pega, we'll want to set up our Lambda function in Amazon. Make sure to create a new function from scratch and use the following settings:
 
 **Name** create a name for your Lambda functon
