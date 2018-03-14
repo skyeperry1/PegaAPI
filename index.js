@@ -6,12 +6,12 @@ exports.handler = (event, context, callback) => {
     //Initialize Client
     var client = request.createClient(process.env.SYS_URL);
 
-    //Case class and properties(Content)
+    //Case class and properties (content)
     var data = {
               "caseTypeID" : process.env.PEGA_CASETYPE_ID,
               "processID" : "pyStartCase",
               "content" : { "pyNote": process.env.CASE_PROP_PYNOTE ? process.env.CASE_PROP_PYNOTE : "Service Case",
-                            "pyLabel" : process.env.CASE_PROP_PYLABEL ? process.env.CASE_PROP_PYLABEL : "pyLabel" }
+                            "pyLabel": process.env.CASE_PROP_PYLABEL ? process.env.CASE_PROP_PYLABEL : "pyLabel" }
                };
 
     //Set up basic Pega API auth
