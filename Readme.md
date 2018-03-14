@@ -7,20 +7,38 @@ A simple Lambda function that calls the Pega Create Case API. For more informati
 - Amazon developer account
 
 ## Usage
+**Configure a case in Pega**
 - First, you'll want to create a case in your Pega application. [Creating a Case in Pega](https://pdn.pega.com/creating-case "Creating a Case in Pega").
 - Once you've created your case, you'll want to copy down the class name. This is found by navigating to the **Application Menu > Definition** from here, navigate to the **cases and data** tab and copy the class from the implementation class.
 Screenshot1 Here
 
-- Once you've created your case in Pega, we'll want to set up our Lambda function in Amazon. Make sure to create a new function from scratch and select Node 6.1 as your runtime enviroment. For additional information on setting up your Lambda function, see [here](https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html "here").
+**Configure Lambda function**
+Once you've created your case in Pega, we'll want to set up our Lambda function in Amazon. Make sure to create a new function from scratch and use the following settings:
 
-- Once you've created you function, upload the archive.zip found in this repository. 
-Show screenshot of upload area in Amazon dev portal
+**Name** create a name for your Lambda functon
 
-- Set your enviroment variables 
+**Runtime** - Node.js 6.10.
 
-**CASE_PROP_PYLABEL** - This will set the pyLabel property of your case
+**Role**  - Choose an existing role.
 
-**CASE_PROP_PYNOTE** - This will set the pyNote property of your case
+**Existing role**, choose lambda_basic_execution.
+
+Click the "Create Function" button.
+
+For additional information on setting up your Lambda function, see [here](https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html "here").
+
+**Upload your function**
+Once you've created you function, upload the archive.zip found in this repository to your Lambda function, to do this
+
+-Under Code entry type, select "Upload a .Zip File"
+
+-Under Function package, click the uploac button and 
+
+**Set your functions enviroment variables:**
+
+**CASE_PROP_PYLABEL** - This will set the pyLabel property of your case (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyLabel was just used as an example )
+
+**CASE_PROP_PYNOTE** - This will set the pyNote property of your case (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyNote was just used as an example )
 
 **OPERATOR_ID** - The operator ID to authenticate the API call
 
