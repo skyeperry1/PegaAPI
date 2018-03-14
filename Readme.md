@@ -37,17 +37,17 @@ Once you've created you function, upload the archive.zip found in this repositor
 ### Set the enviroment variables for your function:
 Create the following in the "Environment variables" section of your Lambda function. These will be passed into the function at runtime. 
 
-**CASE_PROP_PYLABEL** - This will set the pyLabel property of your case (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyLabel was just used as an example )
+- **CASE_PROP_PYLABEL** - This will set the pyLabel property of your case, you can set it to any string (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyLabel was just used as an example )
 
-**CASE_PROP_PYNOTE** - This will set the pyNote property of your case (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyNote was just used as an example )
+- **CASE_PROP_PYNOTE** - This will set the pyNote property of your case, you can set it to any string (You can edit the json that is sent to the Pega API in the index.js file to populate other case specific properties. pyNote was just used as an example )
 
-**OPERATOR_ID** - The operator ID to authenticate the API call
+- **OPERATOR_ID** - The operator ID to authenticate the API call
 
-**OPERATOR_PWD** - The operators password
+- **OPERATOR_PWD** - The operators password
 
-**PEGA_API_ENDPOINT** - Enter the case class that you copied earlier
+- **PEGA_CASETYPE_ID** - Enter the case class that you copied earlier
 
-**SYS_URL** - The url of your Pega instance
+- **SYS_URL** - The url of your Pega instance
 
 If you'd like, you can encrypt your enviroment variables by following the documentation
 [Encrypting Variables](https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt "Encrypting Variables")
